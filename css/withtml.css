@@ -69,6 +69,7 @@ display: block;
 	768-480 	- tablet 
 	480-less 	- phone landscape & smaller
 -----------------------------------*/
+/* Bureau */
 @media all and (min-width: 1024px) and (max-width: 1279px) {
 	
 	.grid *[class*="col_"]{}
@@ -82,6 +83,7 @@ display: block;
 	
 }
 
+/* Tablette */
 @media all and (min-width: 768px) and (max-width: 1023px) {
 	
 	.grid *[class*="col_"]{}
@@ -95,7 +97,7 @@ display: block;
 	
 }
 
-
+/* Tablette Paysage */
 @media all and (min-width: 480px) and (max-width: 767px) {
 
 	.grid *[class*="col_"]{
@@ -122,6 +124,7 @@ display: block;
 	
 }
 
+/* Téléphones */
 @media all and (max-width: 479px) {
 	
 	.grid *[class*="col_"]{
@@ -147,17 +150,6 @@ display: block;
 	.hide-phone		{display:none;}
 	
 }
-
-.reveal {
-	background-color:#F0F0F0;
-	border:1px solid #CCC;
-	padding:8px;
-}
-
-.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
-.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
-* html .clearfix, *:first-child+html .clearfix{zoom:1}
-
 
 /* Head _______________________________________ */
 
@@ -586,6 +578,7 @@ ul.inline li {
 
 /* Divers _______________________________________ */
 
+.reveal {background-color:#F0F0F0;border:1px solid #CCC;	padding:8px;}
 .inline-block {display:inline-block;}
 .inline {display:inline;}
 .center {text-align:center;}
@@ -605,3 +598,6 @@ a.lightbox{display:inline-block;padding:3px;margin:5px;border:1px solid #CCC;-mo
 img.left {float:left;margin:3px 7px 3px 0;}
 img.right {float:right;margin:3px 0 3px 7px;}
 .placeholder{color:#aaa;}
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+* html .clearfix, *:first-child+html .clearfix{zoom:1}
