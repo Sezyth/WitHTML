@@ -4,6 +4,7 @@
 @import url(tiptip.css);
 @import url(jquery.fancybox.css);
 @import url(prettify.css);
+@import url(bxslider.css);
 
 *{
 	-webkit-box-sizing: border-box;
@@ -574,6 +575,24 @@ ul.inline li {
 	}
 	
 }
+
+.slider{
+	clear:both;
+	margin:0;
+	padding:0;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+.slider li{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	float:left;
+	display:block;
+}
+		
 
 
 /* Divers _______________________________________ */
