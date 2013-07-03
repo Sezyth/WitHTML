@@ -21,13 +21,6 @@ jQuery(document).ready(function($){
 		if(document.getElementById(elem)) $(document.getElementById(elem)).addClass('on_error');
 	});
 	
-	
-	// block-center
-	$('.block-center').each(function(){
-		this.style.width = $(this).outerWidth(true) +"px";
-		$(this).removeClass('inline-block');
-	});
-	
 	// TipTip - Tooltips 
 
 	$('.tooltip, .tooltip-top, .tooltip-bottom, .tooltip-right, .tooltip-left').each(function(){
@@ -66,7 +59,7 @@ jQuery(document).ready(function($){
 			$(this).addClass('hover');
 		},
 		function(){
-			$(this).find('ul').stop(true, true).fadeOut();
+			$(this).find('ul').stop(true, true).delay(200).fadeOut();
 			$(this).removeClass('hover');
 	});
 	
@@ -133,10 +126,16 @@ jQuery(document).ready(function($){
 		captions: true,
 		adaptiveHeight: true,
 		touchEnabled: true,
-		pause: 3000,
+		pause: 3900,
 		controls: true,
 		autoStart: true,
 		auto: true
+	});
+	
+	// block-center
+	$('.block-center').each(function(){
+		this.style.width = $(this).outerWidth(true) +"px";
+		$(this).removeClass('inline-block');
 	});
 });
 

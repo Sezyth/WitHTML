@@ -43,10 +43,9 @@ img{
 .col_16 { width:99%}
 
 *[class*="col_"]{
-margin:0.6em 0.5%;
-
-float: left;
-display: block;
+	margin:0.6em 0.5%;
+	float: left;
+	display: block;
 }
 
 
@@ -63,15 +62,9 @@ display: block;
 	margin:0;
 }
 
-/*---------------------------------
-	Responsive Grid Media Queries - 1280, 1024, 768, 480
-	1280-1024 	- desktop (default grid)
-	1024-768 	- tablet landscape
-	768-480 	- tablet 
-	480-less 	- phone landscape & smaller
------------------------------------*/
+
 /* Bureau */
-@media all and (min-width: 1024px) and (max-width: 1279px) {
+@media all and (min-width: 1024px) {
 	
 	.grid *[class*="col_"]{}
 	.grid{width:100%;}
@@ -106,10 +99,24 @@ display: block;
 	width:auto;
 	clear:both;
 	display:block;
+	padding:0;
 	}
 	
-	/* columns inside of columns */
 	.grid *[class*="col_"] [class*="col_"]{
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	}
+	
+	.flex *[class*="col_"]{
+	float:none;
+	width:auto;
+	clear:both;
+	display:block;
+	padding:0;
+	}
+	
+	.flex *[class*="col_"] [class*="col_"]{
 	margin-left:0;
 	margin-right:0;
 	width:100%;
@@ -133,16 +140,30 @@ display: block;
 	width:auto;
 	clear:both;
 	display:block;
+	padding:0;
 	}
 	
-	/* columns inside of columns */
 	.grid *[class*="col_"] [class*="col_"]{
 	margin-left:0;
 	margin-right:0;
 	width:100%;
 	}
 	
-	.grid{max-width: 100%;/*320*/}
+	.flex *[class*="col_"]{
+	float:none;
+	width:auto;
+	clear:both;
+	display:block;
+	padding:0;
+	}
+	
+	.flex *[class*="col_"] [class*="col_"]{
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	}
+	
+	.grid{max-width: 100%;}
 	.show-desktop	{display:none;}
 	.hide-desktop	{display:block;}
 	.show-tablet	{display:none;}
@@ -159,27 +180,27 @@ line-height:120%;
 }
 
 h1{
-font-size:3.3em;
+font-size:2.6em;
 margin:10px 0 10px 0;
 }
 
 h2{
-font-size:2.8em;
+font-size:2.2em;
 margin:10px 0 10px 0;
 }
 
 h3{
-font-size:2.4em;
+font-size:1.8em;
 margin:10px 0 10px 0;
 }
 
 h4{
-font-size:2em;
+font-size:1.6em;
 margin:10px 0 10px 0;
 }
 
 h5{
-font-size:1.5em;
+font-size:1.4em;
 margin:10px 0 10px 0;
 }
 
