@@ -23,6 +23,33 @@ img{
 	vertical-align: bottom;
 }
 
+
+/* Divers _______________________________________ */
+
+.reveal {background-color:#F0F0F0;border:1px solid #CCC;	padding:8px;}
+.inline-block {display:inline-block;}
+.inline {display:inline;}
+.center {text-align:center;}
+.left {text-align:left;}
+.right {	text-align:right;}
+.block-center {	margin-left:auto;margin-right:auto;}
+a{color:#4591d8;outline:0;}
+a:active{color:inherit;}
+a img{border:0;}
+a [class^="icon-"]{color:inherit;text-decoration:none;}
+.strong{color:inherit;font-weight:bold;}
+.strike{color:inherit;text-decoration:line-through;}
+.italic{color:inherit;font-weight:italic;}
+.hide{display:none;}
+.show{display:block;}
+a.lightbox{display:inline-block;padding:3px;margin:5px;border:1px solid #CCC;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;}
+img.left {float:left;margin:3px 7px 3px 0;}
+img.right {float:right;margin:3px 0 3px 7px;}
+.placeholder{color:#aaa;}
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+* html .clearfix, *:first-child+html .clearfix{zoom:1}
+
 /* Grids _______________________________________ */
 
 .col_1 { width:5.25%}
@@ -472,23 +499,47 @@ ul.inline li {
 
 /* Styles */
 .menu{
-	border:1px solid #c2c2c2;
-	background: #e2e2e2;
+	background: #2f3436;
 }
 
 .menu ul{
-	border:1px solid #c2c2c2;
-	background: #e2e2e2;
+	background: #1b1e1f;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+.menu > li.parent > ul{
+	-moz-border-radius:0 5px 5px 5px;
+	-webkit-border-radius:0 5px 5px 5px;
+	border-radius:0 5px 5px 5px;
 }
 
 .menu li a{
-	padding:12px 15px;
+	padding:15px 15px;
 	text-decoration:none;
 	font-size:0.9em;
-	color: #555;
+	color: #EEE;
+	border-right:1px solid #43484a;
 }
-		
-.menu li a:hover,.menu li.hover>a{background:#F7F7F7;}
+
+.menu li.parent ul li a{
+	border-right:none;
+	padding:8px 15px;
+}
+
+.menu li.hover>a{background:#1b1e1f;}
+.menu li a:hover{background:#236be1;}
+
+.menu.vertical li a {border-right:none;}
+
+.menu.vertical.right > li.parent > ul{
+	-moz-border-radius:5px 0 5px 5px;
+	-webkit-border-radius:5px 0 5px 5px;
+	border-radius:5px 0 5px 5px;
+}
 
 .menu li li.parent i.icon-sort-down, .menu.vertical li.parent i.icon-sort-down{
 	-webkit-transform: rotate(270deg);
@@ -498,7 +549,7 @@ ul.inline li {
 	transform: rotate(270deg);
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-	
+
 .menu.vertical.right li.parent i.icon-sort-down{
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
@@ -615,29 +666,3 @@ ul.inline li {
 }
 		
 
-
-/* Divers _______________________________________ */
-
-.reveal {background-color:#F0F0F0;border:1px solid #CCC;	padding:8px;}
-.inline-block {display:inline-block;}
-.inline {display:inline;}
-.center {text-align:center;}
-.left {text-align:left;}
-.right {	text-align:right;}
-.block-center {	margin-left:auto;margin-right:auto;}
-a{color:#4591d8;outline:0;}
-a:active{color:inherit;}
-a img{border:0;}
-a [class^="icon-"]{color:inherit;text-decoration:none;}
-.strong{color:inherit;font-weight:bold;}
-.strike{color:inherit;text-decoration:line-through;}
-.italic{color:inherit;font-weight:italic;}
-.hide{display:none;}
-.show{display:block;}
-a.lightbox{display:inline-block;padding:3px;margin:5px;border:1px solid #CCC;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;}
-img.left {float:left;margin:3px 7px 3px 0;}
-img.right {float:right;margin:3px 0 3px 7px;}
-.placeholder{color:#aaa;}
-.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
-.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
-* html .clearfix, *:first-child+html .clearfix{zoom:1}
