@@ -134,6 +134,7 @@ jQuery(document).ready(function($){
 	
 	// block-center
 	$('.block-center').each(function(){
+		$(this).addClass('inline-block');
 		this.style.width = $(this).outerWidth(true) +"px";
 		$(this).removeClass('inline-block');
 	});

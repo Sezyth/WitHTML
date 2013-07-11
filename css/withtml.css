@@ -593,9 +593,9 @@ ul.inline li {
 
 .menu ul{
 	background: #1b1e1f;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
+	-moz-border-radius:0 5px 5px 5px;
+	-webkit-border-radius:0 5px 5px 5px;
+	border-radius:0 5px 5px 5px;
 	padding-top:8px;
 	padding-bottom:8px;
 	-moz-box-shadow: 0px 4px 4px 0px #999999;
@@ -606,9 +606,9 @@ ul.inline li {
 }
 
 .menu > li.parent > ul{
-	-moz-border-radius:0 5px 5px 5px;
-	-webkit-border-radius:0 5px 5px 5px;
-	border-radius:0 5px 5px 5px;
+	-moz-border-radius:0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px;
 }
 
 .menu li a{
@@ -628,6 +628,18 @@ ul.inline li {
 .menu li a:hover{background:#236be1;}
 
 .menu.vertical li a {border-right:none;}
+
+.menu.vertical > li.parent > ul{
+	-moz-border-radius:0 5px 5px 5px;
+	-webkit-border-radius:0 5px 5px 5px;
+	border-radius:0 5px 5px 5px;
+}
+
+.menu.vertical.right ul{
+	-moz-border-radius:5px 0 5px 5px;
+	-webkit-border-radius:5px 0 5px 5px;
+	border-radius:5px 0 5px 5px;
+}
 
 .menu.vertical.right > li.parent > ul{
 	-moz-border-radius:5px 0 5px 5px;
