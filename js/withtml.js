@@ -38,6 +38,7 @@ jQuery(document).ready(function($){
 	
 	// Notices
 	
+	$(".notice.close").append("<a href='#close' class='icon-remove'></a>");
 	$(document).on('click', '.notice a[class^="icon-remove"]', function(e){
 		e.preventDefault();
 		var notice = $(this).parents('.notice');
