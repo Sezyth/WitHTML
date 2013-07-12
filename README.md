@@ -1,4 +1,6 @@
-WitHTML v beta 1.1
+WitHTML v beta 1.2
 =======
 
-Framework HTML
+Framework HTML / CSS / JS
+
+http://withtml.com
