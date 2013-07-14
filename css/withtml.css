@@ -884,6 +884,7 @@ ul.inline li {
 	padding:0;
 	float:left;
 	display:block;
+	top:-5px;
 }
 		
 

@@ -181,7 +181,7 @@ width: 35px;
 
 .bx-wrapper .bx-caption {
 position: absolute;
-bottom: 0;
+bottom: 5px;
 left: 0;
 background: #666\9;
 background: rgba(80, 80, 80, 0.75);

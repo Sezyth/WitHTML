@@ -128,8 +128,8 @@ jQuery(document).ready(function($){
 		captions: true,
 		adaptiveHeight: true,
 		touchEnabled: true,
-		pause: 3900,
-		controls: true,
+		pause: 3500,
+		controls: false,
 		autoStart: true,
 		auto: true
 	});
