@@ -1,4 +1,6 @@
-
+/* withtml.css - WitHTML.com
+	v beta 1.2
+	sezyth@gmail.com */
 
 @import url(fonts/fontawesome/css/font-awesome.min.css);
 @import url(tiptip.css);
@@ -531,6 +533,8 @@ button.violet:hover, a.button.violet:hover {
 	background-color: #c62eff;
 }
 
+/* Styles des boutons*/
+
 button.disabled, a.button.disabled {
 	background-color: #eee;
 	background-image: none;
@@ -552,6 +556,30 @@ button.disabled:focus, a.button.disabled:focus{
 	-webkit-box-shadow:none;
 	-o-box-shadow:none;
 	box-shadow:none;
+}
+
+button.square, a.button.square {
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+}
+
+button.pill, a.button.pill {
+	-moz-border-radius:100em;
+	-webkit-border-radius:100em;
+	border-radius:100em;
+}
+
+button.pill-left, a.button.pill-left {
+	-moz-border-radius:100em 0 0 100em;
+	-webkit-border-radius:100em 0 0 100em;
+	border-radius:100em 0 0 100em;
+}
+
+button.pill-right, a.button.pill-right {
+	-moz-border-radius:0 100em 100em 0;
+	-webkit-border-radius:0 100em 100em 0;
+	border-radius:0 100em 100em 0;
 }
 
 /* Notices _______________________________________ */
