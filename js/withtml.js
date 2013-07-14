@@ -13,6 +13,7 @@ jQuery(document).ready(function($){
 	$('pre').addClass('prettyprint');prettyPrint();
 	$('.lightbox-various').addClass('fancybox.iframe');
 	$('input, textarea').placeholder();
+	$('[disabled=disabled]').addClass('disabled');
 	
 	// Vérification des formulaires
 	$('.form-val').each(function(){

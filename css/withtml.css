@@ -1,6 +1,4 @@
-/* withtml.css - WitHTML.com
-	v beta 1.2
-	sezyth@gmail.com */
+
 
 @import url(fonts/fontawesome/css/font-awesome.min.css);
 @import url(tiptip.css);
@@ -371,7 +369,6 @@ span.on_error {
 	vertical-align: middle;
 }
 
-
 .form-error {
 	-moz-box-shadow: 0px 0px 5px 0px #fd6864;
 	-webkit-box-shadow: 0px 0px 5px 0px #fd6864;
@@ -418,20 +415,17 @@ button, a.button{
 		rgba(255,255,255,0.3),
 		rgba(0,0,0,0.1)
 	);
-	color:#555;
+	color:#2f3436;
 	border:1px solid #b9b9b9;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
+	font-size:1em;
 	padding:9px 12px;
 	display:inline-block;
 	text-decoration:none;
 	cursor:pointer;
 	text-align:center;
-	vertical-align:middle;
-}
-
-button i, a.button i {
 	vertical-align:middle;
 }
 
@@ -448,6 +442,33 @@ button:hover, a.button:hover{
 	background-color: #fff;
 }
 
+/* Taille des boutons*/
+
+button.tiny, a.button.tiny {
+	font-size:0.7em;
+	padding:4px 6px;
+}
+
+button.small, a.button.small {
+	font-size:0.8em;
+	padding:6px 8px;
+}
+
+button.normal, a.button.normal {
+	font-size:1em;
+	padding:9px 12px;
+}
+
+button.large, a.button.large {
+	font-size:1.18em;
+	padding:12px 15px;
+}
+
+button.big, a.button.big {
+	font-size:1.4em;
+	padding:15px 18px;
+}
+
 /* Couleurs des boutons*/
 
 button.orange, a.button.orange {
@@ -457,7 +478,7 @@ button.orange, a.button.orange {
 }
 
 button.orange:hover, a.button.orange:hover {
-	background-color: #ff7d27;
+	background-color: #fc802d;
 }
 
 button.green, a.button.green {
@@ -467,7 +488,70 @@ button.green, a.button.green {
 }
 
 button.green:hover, a.button.green:hover {
-	background-color: #93de52;
+	background-color: #95dc57;
+}
+
+button.blue, a.button.blue {
+	background-color: #006cff;
+	color:#FFF;
+	border-color:#0061e5;
+}
+
+button.blue:hover, a.button.blue:hover {
+	background-color: #2d86ff;
+}
+
+button.red, a.button.red {
+	background-color: #ff0000;
+	color:#FFF;
+	border-color:#e50000;
+}
+
+button.red:hover, a.button.red:hover {
+	background-color: #ff2d2d;
+}
+
+button.yellow, a.button.yellow {
+	background-color: #ffd200;
+	color:#FFF;
+	border-color:#e6be01;
+}
+
+button.yellow:hover, a.button.yellow:hover {
+	background-color: #ffdb2f;
+}
+
+button.violet, a.button.violet {
+	background-color: #ba00ff;
+	color:#FFF;
+	border-color:#a700e5;
+}
+
+button.violet:hover, a.button.violet:hover {
+	background-color: #c62eff;
+}
+
+button.disabled, a.button.disabled {
+	background-color: #eee;
+	background-image: none;
+	color:#a1a1a1;
+	cursor:default;
+	border-color:#b9b9b9;
+}
+
+button.disabled:hover, a.button.disabled:hover{
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow:none;
+	background-color: #eee;
+}
+
+button.disabled:focus, a.button.disabled:focus{
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow:none;
 }
 
 /* Notices _______________________________________ */
