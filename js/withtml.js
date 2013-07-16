@@ -7,7 +7,6 @@
 jQuery(document).ready(function($){
 
 	// Divers
-
 	$('ul').find('li:first-child').addClass('first');
 	$('ul').find('li:last-child').addClass('last');
 	$('pre').addClass('prettyprint');prettyPrint();
@@ -15,11 +14,21 @@ jQuery(document).ready(function($){
 	$('input, textarea').placeholder();
 	$('[disabled=disabled]').addClass('disabled');
 	
+	// Formulaires personnalisés
+	$('.wit-form input:checked + label').addClass('checked');
+	$('.wit-form input').change( function() {
+		$('.wit-form input + label').removeClass('checked');
+		$('.wit-form input:checked + label').addClass('checked');
+	});
+	
 	// Vérification des formulaires
 	$('.form-val').each(function(){
 		$(this).attr('onblur', 'verifinput(this)');
 		var elem = $(this).attr('onerror');
-		if(document.getElementById(elem)) $(document.getElementById(elem)).addClass('on_error');
+		if(document.getElementById(elem)) {
+			span = document.getElementById(elem);
+			$(span).addClass('on_error');
+		}
 	});
 	
 	// TipTip - Tooltips 
@@ -39,7 +48,7 @@ jQuery(document).ready(function($){
 	
 	// Notices
 	
-	$(".notice.close").append("<a href='#close' class='icon-remove'></a>");
+	$('.notice.close').append('<a href="#close" class="icon-remove"></a>');
 	$(document).on('click', '.notice a[class^="icon-remove"]', function(e){
 		e.preventDefault();
 		var notice = $(this).parents('.notice');
@@ -133,6 +142,37 @@ jQuery(document).ready(function($){
 		autoStart: true,
 		auto: true
 	});
+	
+	// Wit-content
+	$('.wit-content').each(function(){
+		var classe = $(this).attr('class');
+		$(this).wrap('<div class="wit-container ' + classe + '" />');
+		$(this).attr('class', 'wit-content');
+		var titre = $(this).attr('title');
+		if(titre) {
+			$(this).before('<div class="wit-content-title">' + titre + '</div>');
+			$(this).removeAttr('title');
+		}
+	});
+	
+	$('.wit-content-alt').each(function(){
+		var classe = $(this).attr('class');
+		$(this).wrap('<div class="wit-container ' + classe + '" />');
+		$(this).attr('class', 'wit-content-alt');
+		var titre = $(this).attr('title');
+		if(titre) {
+			$(this).before('<div class="wit-content-title-alt">' + titre + '</div>');
+			$(this).removeAttr('title');
+		}
+	});
+	$('.wit-container').removeClass('wit-content wit-content-alt');
+	$('.wit-container.minimize > .wit-content-title, .wit-container.minimize > .wit-content-title-alt').prepend('<a href="#minimize" class="icon-expand"></a>');
+	$(document).on('click', '.wit-content-title a[class^="icon-expand"], .wit-content-title-alt a[class^="icon-expand"]', function(e){
+		e.preventDefault();
+		var content = $(this).parents('.wit-content-title, .wit-content-title-alt').next('.wit-content, .wit-content-alt');
+		content.slideToggle('slow');
+	});
+
 	
 	// block-center
 	$('.block-center').each(function(){

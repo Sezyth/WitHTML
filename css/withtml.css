@@ -380,6 +380,42 @@ span.on_error {
 	border:1px solid #fd6864;
 }
 
+/* Forms personalisées */
+
+.wit-form [type=radio], .wit-form [type=checkbox] {
+    display: none;
+	display:block\9;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	margin-top:-28px\9;
+	width:0\9;
+}
+
+.wit-form [type=radio] + label:before {
+	font: 17px/1em FontAwesome;
+    content: "\f10c";
+	width:16px;
+	display:inline-block;
+}
+
+.wit-form [type=radio] + label.checked:before {
+	font: 17px/1em FontAwesome;
+    content: "\f111";
+}
+
+.wit-form [type=checkbox] + label:before {
+	font: 17px/1em FontAwesome;
+    content: "\f096";
+	width:16px;
+	display:inline-block;
+}
+
+.wit-form [type=checkbox] + label.checked:before {
+	font: 17px/1em FontAwesome;
+    content: "\f046";
+}
+
+
+
 input,textarea,button,a.button{
 	-webkit-transition: -webkit-box-shadow 0.5s, border 0.5s, background-color 0.4s;
 	-moz-transition: -moz-box-shadow 0.5s, border 0.5s, background-color 0.4s;
@@ -429,6 +465,7 @@ button, a.button{
 	cursor:pointer;
 	text-align:center;
 	vertical-align:middle;
+	line-height:100%;
 }
 
 button:focus, a.button:focus{
@@ -868,6 +905,7 @@ ul.inline li {
 	
 }
 
+/* Sliders _______________________________________ */
 
 .slider{
 	clear:both;
@@ -886,7 +924,68 @@ ul.inline li {
 	display:block;
 	top:-5px;
 }
-		
 
+/* Wit-content _______________________________________ */
+
+.wit-content-title, .wit-content-title-alt {
+	text-align:center;
+	padding:5px;
+	font-size:1.1em;
+	font-weight:bold;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	border-radius:5px 5px 0 0;
+	margin-top:10px;
+	-moz-box-shadow: 0px 4px 4px 0px #999999;
+	-webkit-box-shadow: 0px 4px 4px 0px #999999;
+	-o-box-shadow: 0px 4px 4px 0px #999999;
+	box-shadow: 0px 4px 4px 0px #999999;
+	border:1px solid #2f3436;
+	position:relative;
+}
+
+.wit-content-title {
+	color:#FFF;
+	background-color:#2f3436;
+}
+
+.wit-content-title-alt {
+	background-color:#fff;
+	text-align:center;
+	color:#2f3436;
+}
+
+.wit-content-title a.icon-expand, .wit-content-title-alt a.icon-expand {
+	position:absolute;
+	top:5px;
+	right:5px;
+	color:inherit;
+	font-size:16px;
+}
+
+.wit-content, .wit-content-alt {
+	padding:8px;
+	-moz-border-radius:0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px;
+	margin-bottom:10px;
+	-moz-box-shadow: 0px 4px 4px 0px #999999;
+	-webkit-box-shadow: 0px 4px 4px 0px #999999;
+	-o-box-shadow: 0px 4px 4px 0px #999999;
+	box-shadow: 0px 4px 4px 0px #999999;
+	line-height:150%;
+	border:1px solid #2f3436;
+	border-top:none;
+	position:relative;
+}
+.wit-content {
+	color:#2f3436;
+	background-color:#fff;
+}
+
+.wit-content-alt {
+	color:#FFF;
+	background-color:#2f3436;
+}
 
 
