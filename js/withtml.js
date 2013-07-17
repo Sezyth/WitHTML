@@ -1,6 +1,6 @@
 /*---------------------------------
 	withtml.js - WitHTML.com
-	v beta 1.2
+	v beta 2
 	sezyth@gmail.com
 -----------------------------------*/
 
