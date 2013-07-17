@@ -32,7 +32,6 @@ jQuery(document).ready(function($){
 	});
 	
 	// TipTip - Tooltips 
-
 	$('.tooltip, .tooltip-top, .tooltip-bottom, .tooltip-right, .tooltip-left').each(function(){
 		var position = 'top';
 		var content = $(this).attr('title');
@@ -47,7 +46,6 @@ jQuery(document).ready(function($){
 	});
 	
 	// Notices
-	
 	$('.notice.close').append('<a href="#close" class="icon-remove"></a>');
 	$(document).on('click', '.notice a[class^="icon-remove"]', function(e){
 		e.preventDefault();
@@ -57,7 +55,6 @@ jQuery(document).ready(function($){
 	});
 	
 	// Menus
-	
 	$('ul.menu').each(function(){
 		$(this).prepend('<li class="toggle-menu"><a href="#"><i class="icon-reorder"></i> Menu</a></li>');
 		$(this).find('li').has('ul').addClass('parent')
@@ -123,12 +120,10 @@ jQuery(document).ready(function($){
 
 	
 	// Tabs
-	
 	$(".tabs-content").addClass("clearfix").not(":first").hide();$("ul.tabs").each(function(){var e=$(this).find("li.active");if(e.length<1){$(this).find("li:first").addClass("active")}e=$(this).find("li.active a").attr("href");$(e).show()});$(document).on("click",'ul.tabs a[href^="#"]',function(e){e.preventDefault();var t=$(this).parents("ul.tabs").find("li");var n=$(this).attr("href");var r=t.filter(".active").find("a").attr("href");$(r).hide();t.removeClass("active");$(this).parent().addClass("active");$(n).show();history.pushState(null,null,window.location.search+$(this).attr("href"));return false});var uri=window.location.hash;if(uri!=""){var allTabs=$("ul.tabs a[href^="+uri+"]").parents("ul.tabs").find("li");var defaultTab=allTabs.filter(".active").find("a").attr("href");$(defaultTab).hide();allTabs.removeClass("active");$("ul.tabs a[href^="+uri+"]").parent().addClass("active");$("#"+uri.replace("#","")).show();}
 	
 	
 	// Slider
-	
 	$('.slider').bxSlider({
 		mode: 'horizontal', // 'horizontal', 'vertical' ou 'fade'
 		autoHover: true,
@@ -165,6 +160,7 @@ jQuery(document).ready(function($){
 			$(this).removeAttr('title');
 		}
 	});
+	
 	$('.wit-container').removeClass('wit-content wit-content-alt');
 	$('.wit-container.minimize > .wit-content-title, .wit-container.minimize > .wit-content-title-alt').prepend('<a href="#minimize" class="icon-expand"></a>');
 	$(document).on('click', '.wit-content-title a[class^="icon-expand"], .wit-content-title-alt a[class^="icon-expand"]', function(e){
@@ -181,11 +177,6 @@ jQuery(document).ready(function($){
 		$(this).removeClass('inline-block');
 	});
 });
-
-
-
-
-
 
 // FancyBox
 
