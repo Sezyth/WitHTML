@@ -747,8 +747,8 @@ ul.pagination li.active{
 
 /* Menus _______________________________________ */
 
-.menu{margin:0;padding:0;font-size:0;position:relative;}
-.menu ul{margin:0;position:absolute;top:100%;left:0;display:none;min-width:155px;max-width:155%;*width:155px;z-index:1001;}
+.menu{margin:0;padding:0;font-size:0;position:relative;z-index:1000;}
+.menu ul{margin:0;position:absolute;top:100%;left:0;display:none;min-width:155px;max-width:155%;*width:155px;}
 .menu li{padding:0;list-style-type:none;display:inline-block;*display:inline;position:relative;zoom:1;line-height:inherit;top:0;left:0;font-size:15px;}
 .menu ul li{display:block;width:100%;}
 .menu li a{padding:0;display:block;display:inline;display:inline-block;position:relative;zoom:1;line-height:100%;top:0;left:0;}
@@ -842,16 +842,15 @@ ul.pagination li.active{
 .menu li li.parent i.icon-sort-down, .menu.vertical li.parent i.icon-sort-down{
 	-webkit-transform: rotate(270deg);
 	-moz-transform: rotate(270deg);
-	-ms-transform: rotate(270deg);
 	-o-transform: rotate(270deg);
 	transform: rotate(270deg);
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	background-color:inherit;
 }
 
 .menu.vertical.right li.parent i.icon-sort-down{
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
