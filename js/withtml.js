@@ -13,6 +13,7 @@ jQuery(document).ready(function($){
 	$('.lightbox-various').addClass('fancybox.iframe');
 	$('input, textarea').placeholder();
 	$('[disabled=disabled]').addClass('disabled');
+	$('blockquote.icon').before('<i class="icon-quote-left icon-4x pull-left icon-muted"></i>');
 	
 	// Formulaires personnalisés
 	$('.wit-form input:checked + label').addClass('checked');
