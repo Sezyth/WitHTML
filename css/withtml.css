@@ -452,7 +452,7 @@ input,textarea,button,a.button{
 	transition: box-shadow 0.5s, border 0.5s, background-color 0.4s;
 }
 
-button, a.button{
+button, a.button, input[type=button].button, input[type=submit].button{
 	background-color: #f5f5f5;
 	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=#4dffffff, endColorstr=#0f000000);
 	/* Navigateurs récents */
@@ -497,7 +497,7 @@ button, a.button{
 	line-height:100%;
 }
 
-button:focus, a.button:focus{
+button:focus, a.button:focus, input[type=button].button:focus, input[type=submit].button:focus{
 	-moz-box-shadow: 0px 0px 5px 0px #658fd4;
 	-webkit-box-shadow: 0px 0px 5px 0px #658fd4;
 	-o-box-shadow: 0px 0px 5px 0px #658fd4;
@@ -506,102 +506,102 @@ button:focus, a.button:focus{
 	border:1px solid #658fd4;
 }
 
-button:hover, a.button:hover{
+button:hover, a.button:hover, input[type=button].button:hover, input[type=submit].button:hover{
 	background-color: #fff;
 }
 
 /* Taille des boutons*/
 
-button.tiny, a.button.tiny {
+button.tiny, a.button.tiny , input[type=button].button.tiny, input[type=submit].button.tiny{
 	font-size:0.7em;
 	padding:4px 6px;
 }
 
-button.small, a.button.small {
+button.small, a.button.small, input[type=button].button.small, input[type=submit].button.small {
 	font-size:0.8em;
 	padding:6px 8px;
 }
 
-button.normal, a.button.normal {
+button.normal, a.button.normal, input[type=button].button.normal, input[type=submit].button.normal {
 	font-size:1em;
 	padding:9px 12px;
 }
 
-button.large, a.button.large {
+button.large, a.button.large , input[type=button].button.large, input[type=submit].button.large{
 	font-size:1.18em;
 	padding:12px 15px;
 }
 
-button.big, a.button.big {
+button.big, a.button.big , input[type=button].button.big, input[type=submit].button.big{
 	font-size:1.4em;
 	padding:15px 18px;
 }
 
 /* Couleurs des boutons*/
 
-button.orange, a.button.orange {
+button.orange, a.button.orange , input[type=button].button.orange, input[type=submit].button.orange{
 	background-color: #ff6600;
 	color:#FFF;
 	border-color:#e65c00;
 }
 
-button.orange:hover, a.button.orange:hover {
+button.orange:hover, a.button.orange:hover , input[type=button].button.orange:hover, input[type=submit].button.orange:hover{
 	background-color: #fc802d;
 }
 
-button.green, a.button.green {
+button.green, a.button.green, input[type=button].button.green, input[type=submit].button.green {
 	background-color: #78ce2c;
 	color:#FFF;
 	border-color:#69b526;
 }
 
-button.green:hover, a.button.green:hover {
+button.green:hover, a.button.green:hover , input[type=button].button.green:hover, input[type=submit].button.green:hover{
 	background-color: #95dc57;
 }
 
-button.blue, a.button.blue {
+button.blue, a.button.blue, input[type=button].button.blue, input[type=submit].button.blue {
 	background-color: #006cff;
 	color:#FFF;
 	border-color:#0061e5;
 }
 
-button.blue:hover, a.button.blue:hover {
+button.blue:hover, a.button.blue:hover, input[type=button].button.blue:hover, input[type=submit].button.blue:hover{
 	background-color: #2d86ff;
 }
 
-button.red, a.button.red {
+button.red, a.button.red , input[type=button].button.red , input[type=submit].button.red {
 	background-color: #ff0000;
 	color:#FFF;
 	border-color:#e50000;
 }
 
-button.red:hover, a.button.red:hover {
+button.red:hover, a.button.red:hover, input[type=button].button.red:hover, input[type=submit].button.red:hover {
 	background-color: #ff2d2d;
 }
 
-button.yellow, a.button.yellow {
+button.yellow, a.button.yellow , input[type=button].button.yellow, input[type=submit].button.yellow{
 	background-color: #ffd200;
 	color:#FFF;
 	border-color:#e6be01;
 }
 
-button.yellow:hover, a.button.yellow:hover {
+button.yellow:hover, a.button.yellow:hover , input[type=button].button.yellow:hover, input[type=submit].button.yellow:hover{
 	background-color: #ffdb2f;
 }
 
-button.violet, a.button.violet {
+button.violet, a.button.violet , input[type=button].button.violet, input[type=submit].button.violet{
 	background-color: #ba00ff;
 	color:#FFF;
 	border-color:#a700e5;
 }
 
-button.violet:hover, a.button.violet:hover {
+button.violet:hover, a.button.violet:hover, input[type=button].button.violet:hover, input[type=submit].button.violet:hover {
 	background-color: #c62eff;
 }
 
 /* Styles des boutons*/
 
-button.disabled, a.button.disabled {
+button.disabled, a.button.disabled , input[type=button].button.disabled , input[type=submit].button.disabled {
 	background-color: #eee;
 	background-image: none;
 	color:#a1a1a1;
@@ -609,7 +609,7 @@ button.disabled, a.button.disabled {
 	border-color:#b9b9b9;
 }
 
-button.disabled:hover, a.button.disabled:hover{
+button.disabled:hover, a.button.disabled:hover, input[type=button].button.disabled:hover, input[type=submit].button.disabled:hover{
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
 	-o-box-shadow:none;
@@ -617,32 +617,32 @@ button.disabled:hover, a.button.disabled:hover{
 	background-color: #eee;
 }
 
-button.disabled:focus, a.button.disabled:focus{
+button.disabled:focus, a.button.disabled:focus, input[type=button].button.disabled:focus, input[type=submit].button.disabled:focus{
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
 	-o-box-shadow:none;
 	box-shadow:none;
 }
 
-button.square, a.button.square {
+button.square, a.button.square , input[type=button].button.square, input[type=submit].button.square{
 	-moz-border-radius:0;
 	-webkit-border-radius:0;
 	border-radius:0;
 }
 
-button.pill, a.button.pill {
+button.pill, a.button.pill , input[type=button].button.pill, input[type=submit].button.pill{
 	-moz-border-radius:100em;
 	-webkit-border-radius:100em;
 	border-radius:100em;
 }
 
-button.pill-left, a.button.pill-left {
+button.pill-left, a.button.pill-left , input[type=button].button.pill-left, input[type=submit].button.pill-left{
 	-moz-border-radius:100em 0 0 100em;
 	-webkit-border-radius:100em 0 0 100em;
 	border-radius:100em 0 0 100em;
 }
 
-button.pill-right, a.button.pill-right {
+button.pill-right, a.button.pill-right, input[type=button].button.pill-right, input[type=submit].button.pill-right {
 	-moz-border-radius:0 100em 100em 0;
 	-webkit-border-radius:0 100em 100em 0;
 	border-radius:0 100em 100em 0;
