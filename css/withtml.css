@@ -1,5 +1,5 @@
 /* withtml.css - WitHTML.com
-	v beta 2.1
+	v 1.0
 	sezyth@gmail.com 
 	
 	This work is licensed under the Creative Commons Attribution - Pas d’Utilisation Commerciale 3.0 non transposé License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/3.0/
@@ -37,7 +37,6 @@ img{
 .center {text-align:center;}
 .left {text-align:left;}
 .right {	text-align:right;}
-.block-center {	margin-left:auto;margin-right:auto;}
 a{color:#4591d8;outline:0;}
 a:active{color:inherit;}
 a img{border:0;}
@@ -1168,4 +1167,4 @@ ul.pagination li.active{
 	background-color:#2f3436;
 }
 
-
+.block-center {	margin-left:auto;margin-right:auto;}
