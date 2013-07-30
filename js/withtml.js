@@ -165,8 +165,8 @@ jQuery(document).ready(function($){
 	});
 	
 	$('.wit-container').removeClass('wit-content wit-content-alt');
-	$('.wit-container.minimize > .wit-content-title, .wit-container.minimize > .wit-content-title-alt').prepend('<a href="#minimize" class="icon-expand"></a>');
-	$(document).on('click', '.wit-content-title a[class^="icon-expand"], .wit-content-title-alt a[class^="icon-expand"]', function(e){
+	$('.wit-container.minimize > .wit-content-title, .wit-container.minimize > .wit-content-title-alt').prepend('<a href="#minimize" class="icon-collapse"></a>');
+	$(document).on('click', '.wit-content-title a[class^="icon-collapse"], .wit-content-title-alt a[class^="icon-collapse"]', function(e){
 		e.preventDefault();
 		var content = $(this).parents('.wit-content-title, .wit-content-title-alt').next('.wit-content, .wit-content-alt');
 		content.slideToggle('slow');
