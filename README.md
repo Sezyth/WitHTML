@@ -1,4 +1,4 @@
-WitHTML v beta 2.1
+WitHTML v 1.0
 =======
 
 Framework HTML / CSS / JS
