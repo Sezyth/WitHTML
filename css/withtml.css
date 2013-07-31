@@ -995,8 +995,8 @@ ul.pagination li.active{
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
 
-.menu ul li.separator{border-top:1px solid #bbb;}
-.menu ul li.separator a{border-top:1px solid #fff;}
+.menu ul li.separator{border-top:1px solid #000;}
+.menu ul li.separator a{border-top:1px solid #444;}
 
 /* Responsive */
 .menu li.toggle-menu{display:none;}
