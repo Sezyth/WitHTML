@@ -74,7 +74,19 @@ jQuery(document).ready(function($){
 			$(this).removeClass('hover');
 	});
 	
-	
+	// Boutons dropdown
+	$('button.dropdown').each(function(){
+		$(this).append(' <i class="icon-sort-down"></i>');
+		$(this).attr('onclick','focus()');
+	});
+	$("button.dropdown").focusin(function(){
+		var content = $(this).next('ul.dropdown');
+		content.show("fast");
+	});
+	$("button.dropdown").focusout(function(){
+		var content = $(this).next('ul.dropdown');
+		content.hide("fast");
+	});
 	// FancyBox
 	
 	$('.lightbox-content').each(function(){
