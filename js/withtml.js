@@ -140,14 +140,14 @@ jQuery(document).ready(function($){
 	
 	// Slider
 	$('.slider').bxSlider({
-		mode: 'horizontal', // 'horizontal', 'vertical' ou 'fade'
+		mode: 'fade', // 'horizontal', 'vertical' ou 'fade'
 		autoHover: true,
-		speed: 500,
+		speed: 650,
 		infiniteLoop: true,
 		captions: true,
 		adaptiveHeight: true,
 		touchEnabled: true,
-		pause: 3500,
+		pause: 4200,
 		controls: false,
 		autoStart: true,
 		auto: true

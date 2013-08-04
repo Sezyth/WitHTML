@@ -703,6 +703,12 @@ button.pill-right, a.button.pill-right, input[type=button].button.pill-right, in
 	border-radius:0 100em 100em 0;
 }
 
+button.flat, a.button.flat, input[type=button].button.flat, input[type=submit].button.flat {
+	border:none;
+	background-image:none;
+	filter:none;
+}
+
 /* Barres de boutons*/
 
 ul.button-bar {
@@ -778,6 +784,7 @@ ul.dropdown{
 	box-shadow: 0px 0px 4px #999;
 	border:1px solid #2f3436;
 	top:100%;
+	z-index:1000;
 }
 
 
@@ -1139,21 +1146,23 @@ ul.pagination li.active{
 /* Sliders _______________________________________ */
 
 .slider{
-	clear:both;
+	clear:left;
 	margin:0;
 	padding:0;
-	width:auto;
-	height:auto;
-	overflow:hidden;
+	font-size:0.9em;
 }
 
 .slider li{
 	list-style-type:none;
 	margin:0;
 	padding:0;
-	float:left;
-	display:block;
 	top:-5px;
+	float:left;
+}
+
+.slider li > a.lightbox img {
+	padding:0;
+	margin:0;
 }
 
 /* Wit-content _______________________________________ */
