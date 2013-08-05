@@ -594,6 +594,10 @@ button.big, a.button.big , input[type=button].button.big, input[type=submit].but
 
 /* Couleurs des boutons*/
 
+button.flat:hover, a.button.flat:hover, input[type=button].button.flat:hover, input[type=submit].button.flat:hover {
+	background-color:#ddd;
+}
+
 button.orange, a.button.orange , input[type=button].button.orange, input[type=submit].button.orange{
 	background-color: #ff6600;
 	color:#FFF;
@@ -1238,6 +1242,10 @@ ul.pagination li.active{
 .slider li > a.lightbox img {
 	padding:0;
 	margin:0;
+}
+
+.bx-wrapper .bx-viewport {
+	left:0;
 }
 
 /* Wit-content _______________________________________ */
