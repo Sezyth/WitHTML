@@ -805,6 +805,81 @@ ul.dropdown li a{
 }
 
 ul.dropdown li a:hover{background:#236be1;color:#FFF;}
+
+/* Selects personnalisés*/
+
+.wit-form select {
+	display:none;
+}
+
+.wit-form div.ul_select {
+	position:relative;
+}
+
+.wit-form div.ul_select img, .wit-form div.ul_select i[class="icon"]{
+	vertical-align:middle;
+	margin-right:6px;
+	margin-top:-2px;
+}
+
+.wit-form div.ul_select_cell {
+	position:relative;
+	padding:5px;
+	border:1px solid #ccc;
+	min-height:28px;
+	outline:none;
+	display:inline-block;
+	*display:inline;
+	vertical-align: middle;
+	width:auto;
+	zoom:1;
+	border:1px solid #ccc;
+	font-size:1em;
+	text-indent: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	background:#fff;
+	margin:5px 0;
+	min-width:163px;
+	padding-right:22px;
+}
+
+.wit-form div.ul_select_cell i.icon-sort-down {
+	position:absolute;
+	top:50%;
+	right:5px;
+	margin-top:-7px;
+}
+
+.wit-form div.ul_select ul.select{
+	display:none;
+	position:absolute;
+	list-style-type:none;
+	margin:0;
+	padding:5px 0;
+	color:inherit;
+	background: #FFF;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0px 0px 4px #999;
+	-webkit-box-shadow: 0px 0px 4px #999;
+	box-shadow: 0px 0px 4px #999;
+	border:1px solid #2f3436;
+	top:100%;
+	z-index:1000;
+}
+
+.wit-form div.ul_select ul.select li{
+	padding:3px 8px;
+}
+
+.wit-form div.ul_select ul.select li:hover{
+	background:#236be1;
+	color:#FFF;
+}
+
 /* Notices _______________________________________ */
 
 .notice{

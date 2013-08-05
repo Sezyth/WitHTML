@@ -79,14 +79,56 @@ jQuery(document).ready(function($){
 		$(this).append(' <i class="icon-sort-down"></i>');
 		$(this).attr('onclick','focus()');
 	});
-	$("button.dropdown").focusin(function(){
+	$('button.dropdown').focusin(function(){
 		var content = $(this).next('ul.dropdown');
-		content.show("fast");
+		if (content.css("display") == "none")	content.slideDown("fast");
 	});
-	$("button.dropdown").focusout(function(){
+	$('button.dropdown').focusout(function(){
 		var content = $(this).next('ul.dropdown');
-		content.hide("fast");
+		content.delay(50).slideUp("fast");
 	});
+	
+	// Selects personnalisés
+	$('.wit-form select').each(function(){
+		$(this).wrap('<div class="ul_select ' + $(this).attr('class') + '">');
+		var titre = ""; 
+		if ($(this).attr('title')) titre = $(this).attr('title');
+		$(this).before('<div class="ul_select_cell" tabindex="-1">' + titre + '</div>');
+		$(this).after('<ul class="select">');
+		list = $(this).next('ul.select');
+		$(this).children('option').each(function(){
+			var img = "";
+			var ico = "";
+			if ($(this).attr('data-img')) img = '<img src="' + $(this).attr('data-img') + '"/>';
+			if ($(this).attr('data-icon')) img = '<i class="' + $(this).attr('data-icon') + '"></i> ';
+			$(list).append('<li value="' + $(this).attr('value') + '">' + img + ico + $(this).html() + '</li>');
+			if ($(this).attr('selected')) $(this).parent('select').parent('.ul_select').children('.ul_select_cell').html($(list).children('li:last-child').html());
+		});
+	});
+	
+	$('.wit-form ul.select').each(function(){
+		$('.wit-form ul.select li').click(function() {
+			$(this).parent('ul.select').parent('.ul_select').children('.ul_select_cell').html($(this).html());
+			sel = $(this).parent('ul.select').parent('.ul_select').children('select');
+			$(sel).val($(this).attr('value')).attr("selected", "selected");
+			$(this).parent('ul.select').parent('.ul_select').children('.ul_select_cell').append(' <i class="icon-sort-down"></i>');
+		});
+	});
+	
+	$('div.ul_select_cell').each(function(){
+		$(this).append(' <i class="icon-sort-down"></i>');
+		$(this).attr('onclick','focus()');
+	});
+	
+	$('div.ul_select_cell').focusin(function(){
+		var content = $(this).next('select').next('ul.select');
+		if (content.css("display") == "none")	content.slideDown("fast");
+	});
+	$('div.ul_select_cell').focusout(function(){
+		var content = $(this).next('select').next('ul.select');
+		content.delay(50).slideUp("fast");
+	});
+	
 	// FancyBox
 	
 	$('.lightbox-content').each(function(){
