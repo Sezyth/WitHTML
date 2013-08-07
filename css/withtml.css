@@ -499,6 +499,9 @@ span.on_error {
     content: "\f046";
 }
 
+.wit-form [type=radio] + label, .wit-form [type=checkbox] + label {
+	cursor:pointer;
+}
 
 
 input,textarea,button,a.button{
@@ -761,6 +764,7 @@ ul.button-bar li.last, ul.button-bar li.last a  {
 
 .button-group {
 	position:relative;
+	padding:0;
 }
 
 button.dropdown:focus{
@@ -789,6 +793,7 @@ ul.dropdown{
 	border:1px solid #2f3436;
 	top:100%;
 	z-index:1000;
+	cursor:pointer;
 }
 
 
@@ -847,6 +852,7 @@ ul.dropdown li a:hover{background:#236be1;color:#FFF;}
 	margin:5px 0;
 	min-width:163px;
 	padding-right:22px;
+	cursor:pointer;
 }
 
 .wit-form div.ul_select_cell i.icon-sort-down {
@@ -873,6 +879,7 @@ ul.dropdown li a:hover{background:#236be1;color:#FFF;}
 	border:1px solid #2f3436;
 	top:100%;
 	z-index:1000;
+	cursor:pointer;
 }
 
 .wit-form div.ul_select ul.select li{
