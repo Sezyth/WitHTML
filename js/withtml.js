@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
 	// Divers
 	$('ul').find('li:first-child').addClass('first');
 	$('ul').find('li:last-child').addClass('last');
-	$('pre').addClass('prettyprint');prettyPrint();
+	$('pre:not(.no-prettify)').addClass('prettyprint');prettyPrint();
 	$('.lightbox-various').addClass('fancybox.iframe');
 	$('input, textarea').placeholder();
 	$('[disabled=disabled]').addClass('disabled');
